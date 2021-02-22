@@ -2,46 +2,98 @@
 
 class Customer{
 
+    
+    private String name;
+    private String contact;
 
-    String name;
-    String contact;
+    public String getName() {
+        return name;
+    }
 
-    void waitForCoffee()
-    {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    void waitForCoffee() {
 
     }
-    void collectCoffee()
-    {
+    void collectCoffee() {
 
     }
 }
 class Barista{
-
+    
     Order order;
-    int empID;
+    private int empID;
 
-    void prepareCofee(int orderid){
+    public int getEmpID() {
+        return empID;
+    }
+
+    public void setEmpID(int empID) {
+        this.empID = empID;
+    }
+
+    void prepareCoffee(int order_id){
+    }
+    
+    void addOrderToCompleteQueue(int order_id) {
 
     }
-    void addOrderToCompleteQueue(order)
-    {
-
-    }
-    String notifyOrderComplete(order)
-    {
+    String notifyOrderComplete(int order_id) {
 
     }
 }
 class Order
 {
-    int orderid;
-    String coffeeType;
+    public int getOrder_id() {
+        return order_id;
+    }
+
+    public void setOrder_id(int order_id) {
+        this.order_id = order_id;
+    }
+
+    public String getCoffeeType() {
+        return coffeeType;
+    }
+
+    public void setCoffeeType(String coffeeType) {
+        this.coffeeType = coffeeType;
+    }
+
+    private int order_id;
+    private String coffeeType;
 }
 
 class Cashier
 {
-    String name;
-    int empId;
+    private String name;
+    private int empId;
+    
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
 }
+
 
